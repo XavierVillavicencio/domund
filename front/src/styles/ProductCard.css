@@ -1,0 +1,9 @@
+.product-card {
+  width: 18rem;
+  transition: 0.1s all linear;
+}
+
+.product-card:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+}
