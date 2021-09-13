@@ -17,32 +17,20 @@ const RouterData = [
   //grupo 1
   [
     {
-      link: "/productos",
-      name: "Productos",
+      link: "/condiminio",
+      name: "Condominios",
     },
     {
-      link: "/reportes",
-      name: "Reportes",
+      link: "/unidades",
+      name: "Unidades Habitacionales",
     },
     {
-      link: "/devoluciones",
-      name: "Devoluciones",
+      link: "/residentes",
+      name: "Residentes",
     },
     {
-      link: "/tutoriales",
-      name: "Tutoriales",
-    },
-    {
-      link: "/publicidad",
-      name: "Publicidad",
-    },
-    {
-      link: "/depositos",
-      name: "Depósitos",
-    },
-    {
-      link: "/fondos",
-      name: "Reportes fondos",
+      link: "/configuracion",
+      name: "Configuración",
     },
     {
       link: "/datos",

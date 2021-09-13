@@ -34,10 +34,10 @@ export default function CloseToExpirationModal({
             </h5>
           </div>
           <div className="modal-body d-flex flex-column align-items-center justify-content-center p-5">
-            <h3 className="text-center text-white">
+            <h3 className="text-center">
               Su sesión se cerrará en 60 segundos
             </h3>
-            <h4 className="mb-0 text-white text-center fw-light">
+            <h4 className="mb-0 text-center fw-light">
               ¿ Desea mantener su sesión ?
             </h4>
           </div>

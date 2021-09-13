@@ -9,7 +9,7 @@ export default function CollapseMenu({ name, childrens }) {
     <>
       <p className="mb-0 w-100">
         <a
-          className="nav-link w-100 text-white"
+          className="nav-link w-100"
           data-bs-toggle="collapse"
           href={hashedId}
           role="button"
@@ -22,7 +22,7 @@ export default function CollapseMenu({ name, childrens }) {
       <div className="collapse mx-0 w-100" id={id}>
         {childrens.map((item) => (
           <NavLink
-            className="nav-link text-white hover-link"
+            className="nav-link hover-link"
             activeClassName="active-link"
             key={item.link}
             to={item.link}
