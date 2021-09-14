@@ -17,19 +17,19 @@ const RouterData = [
   //grupo 1
   [
     {
-      link: "/condiminio",
+      link: "/datos",
       name: "Condominios",
     },
     {
-      link: "/unidades",
+      link: "/datos",
       name: "Unidades Habitacionales",
     },
     {
-      link: "/residentes",
+      link: "/datos",
       name: "Residentes",
     },
     {
-      link: "/configuracion",
+      link: "/datos",
       name: "Configuración",
     },
     {

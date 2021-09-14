@@ -34,7 +34,7 @@ export default function AppRouter() {
           <Navbar />
 
           <Switch>
-            <Route exact path="/productos" component={Products}/>
+            <Route exact path="/productos" component={Data}/>
             <Route exact path="/reportes" component={Reports}/>
             <Route exact path="/devoluciones" component={Returns}/>
             <Route exact path="/tutoriales" component={Tutorials}/>
@@ -45,7 +45,7 @@ export default function AppRouter() {
             <Route exact path="/datos" component={Data}/>
 
             <Route path="*">
-              <Redirect to="/productos" />
+              <Redirect to="/Data" />
             </Route>
           </Switch>
         </div>
