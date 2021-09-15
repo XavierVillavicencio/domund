@@ -1,6 +1,8 @@
- ##Proyecto Domund
+ # Proyecto Domund
  
- ###Team Click.ec
+ ---
+ 
+ ## Team Click.ec
  
  - Pablo
  - Cris
