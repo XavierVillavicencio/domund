@@ -9,15 +9,15 @@ import "styles/Sidebar.css";
 
 export default function Sidebar() {
   return (
-    <aside className="sidebar-custom d-flex flex-column justify-content-start align-items-center px-2 py-3">
+    <aside className="sidebar-custom d-flex flex-column justify-content-start align-items-center px-2 py-3 bg-light overflow-hidden">
       <header className={"py-2"}>
         DOMUND
       </header>
 
-      <nav className="w-100">
-        <ul className="ps-0">
+      <nav className="w-100 ">
+        <ul className="nav flex-column ">
           {RouterData.map((group, index) => (
-            <li key={index} className="w-100 py-2">
+            <li key={index} className="nav-item w-100">
               {group.map((item) =>
                 item.link ? (
                   <NavLink
@@ -26,7 +26,7 @@ export default function Sidebar() {
                     key={item.link}
                     to={item.link}
                   >
-                    {item.name}
+                    <i className= {item.icon}></i> {item.name}
                   </NavLink>
                 ) : (
                   <CollapseMenu

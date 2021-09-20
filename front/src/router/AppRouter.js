@@ -14,7 +14,7 @@ import Navbar from "components/layout/Navbar";
 import Sidebar from "components/layout/Sidebar";
 
 import Products from "pages/Products";
-import Reports from "pages/Reports";
+import Condos from "pages/Condos";
 import Returns from "pages/Returns";
 import Tutorials from "pages/Tutorials";
 import Advertising from "pages/Advertising";
@@ -35,7 +35,7 @@ export default function AppRouter() {
 
           <Switch>
             <Route exact path="/productos" component={Data}/>
-            <Route exact path="/reportes" component={Reports}/>
+            <Route exact path="/condos" component={Condos}/>
             <Route exact path="/devoluciones" component={Returns}/>
             <Route exact path="/tutoriales" component={Tutorials}/>
             <Route exact path="/publicidad" component={Advertising}/>

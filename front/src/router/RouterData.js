@@ -14,27 +14,66 @@
 */
 
 const RouterData = [
-  //grupo 1
   [
     {
       link: "/datos",
+      name: "Dashboard",
+      icon:"fas fa-tachometer-alt" // <i class="fas fa-tachometer-alt"></i>
+    },
+    {
+      link: "/condos",
       name: "Condominios",
+      icon:"fas fa-building" // <i class="fas fa-building"></i>
     },
     {
       link: "/datos",
-      name: "Unidades Habitacionales",
+      name: "Unidades Habitacionales", // <i class="fas fa-person-booth"></i>
+      icon:"fas fa-person-booth"
     },
     {
       link: "/datos",
-      name: "Residentes",
+      name: "Contactos",
+      icon:"fas fa-address-book" // <i class="far fa-address-book"></i>
+    },
+    {
+      link: "/datos",
+      name: "Servicios Básicos",
+      icon:"fas fa-tint"
+    },
+    {
+      link: "/datos",
+      name: "Proveedores", // <i class="fas fa-people-arrows"></i>
+      icon:"fas fa-people-arrows"
+    },
+    {
+      link: "/datos",
+      name: "Guardianía", // <i class="fas fa-people-arrows"></i> <i class="fas fa-sitemap"></i>
+      icon:"fas fa-user-tie"
+    },
+    {
+      link: "/datos",
+      name: "Áreas comunales", // <i class="fas fa-people-arrows"></i>
+      icon:"fas fa-futbol"
+    },
+    {
+      link: "/datos",
+      name: "Directiva", // <i class="fas fa-people-arrows"></i>
+      icon:"fas fas fa-sitemap"
+    },
+    {
+      link: "/datos",
+      name: "Biblioteca Virtual",
+      icon:"fas fa-book"
     },
     {
       link: "/datos",
       name: "Configuración",
+      icon:"fas fa-wrench"
     },
     {
       link: "/datos",
-      name: "Mis Datos",
+      name: "Mis Datos", 
+      icon:"fas fa-sign-out-alt" // <i class="fas fa-sign-out-alt"></i>
     },
   ],
 ];

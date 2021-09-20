@@ -7,7 +7,6 @@ export default function Data() {
   return (
     <ContentContainer>
       <h1 className="py-5">Mis datos</h1>
-
       <Form />
     </ContentContainer>
   );
