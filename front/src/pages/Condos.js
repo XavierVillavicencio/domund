@@ -2,7 +2,6 @@ import React from "react";
 
 import ContentContainer from "components/layout/ContentContainer";
 import DateInputs from "components/Common/DateInputs";
-import TableBody from "components/Common/TableBody";
 
 export default function Condos() {
   return (
