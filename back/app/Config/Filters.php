@@ -46,7 +46,6 @@ class Filters extends BaseConfig
 
     public function __construct()
     {
-
         return true;
         if ($this->checkIsConsole()) {
             return true; // logbar

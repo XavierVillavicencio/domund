@@ -21,7 +21,7 @@ code {
 .body-content {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /*overflow: hidden;*/
   max-height: 100vh;
   width: 86%;
 }

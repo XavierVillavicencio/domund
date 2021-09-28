@@ -54,6 +54,7 @@ export const DefaultDate = ({
         type="date"
         className={`form-control ${error && "is-invalid"}`}
         name={inputName}
+        id={inputName}
         value={value}
         onChange={onChange}
         required={required}
@@ -225,7 +226,7 @@ export const DefaultFile = ({
   );
 };
 
-/* 
+/*
   Default INPUT component usage
 
   <DefaultInput
@@ -237,10 +238,10 @@ export const DefaultFile = ({
     placeholder=""
     error={}
   />
-  
+
 */
 
-/* 
+/*
   Default SELECT INPUT component usage
 
   <DefaultSelect

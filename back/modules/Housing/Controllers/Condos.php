@@ -17,27 +17,23 @@ class Condos extends ResourceController {
         $l = $this->request->getVar('l');
         $o = $this->request->getVar('o');
         $k = $this->request->getVar('k');
-        $limit = ($l != "") ? $l : 3;
+        $limit = ($l != "") ? $l : 20;
         $offset = ($o != "") ? $o : 0;
         $k = strtoupper($k);
         $where = null;
-
-        if (strlen($k) >= 3) 
+        if (strlen($k) >= 3)
             {
                 $where = " WHERE searchitem like '%{$k}%'";
             }
-        
         $sqlTotal = ", (select count(*) from housing.condos {$where}) as total";
         $sql = "SELECT * {$sqlTotal} FROM housing.condos {$where}";
         $sql .= " offset $offset limit $limit";
         $query = $db->query($sql);
         $data = $query->getResultArray();
-
         $arr['datos'] = $data;
         $arr['sql'] = $sql;
-        $arr['total'] = $data[0]['total'];
-        $arr['paginas'] = "5";
-
+        $arr['total'] = empty($data[0]['total'])?0:$data[0]['total'];
+        $arr['paginas'] = empty($data[0]['total'])?0:($data[0]['total'])/$limit;
         return $this->respond($arr);
     }
 
@@ -47,16 +43,14 @@ class Condos extends ResourceController {
     }
 
     public function create() {
-        
         $datos = $this->request->getPost();
-        
         $id = $this->condos->insert($datos);
-        if ($this->condos->errors())
-            return $this->fail($this->condos->errors());
-
-        if ($id == false)
+        if ($this->condos->errors()){
+              return $this->fail($this->condos->errors());
+            }
+        if ($id == false){
             return $this->failServerError();
-        else {
+        }else{
             $respuesta = [
                 'status' => 201,
                 'messages' => "Condominio creado",
@@ -67,7 +61,6 @@ class Condos extends ResourceController {
     }
 
     public function update($id = null) {
-
         /* Validar que exista el id recibido */
         if ($id === null)
             return $this->respond("no existe");
@@ -91,7 +84,7 @@ class Condos extends ResourceController {
         } else {
             $respuesta = [
                 'status' => 201,
-                'messages' => "Grupo actualizado",
+                'messages' => "Condominio actualizado",
                 'id' => $id,
             ];
             return $this->respond($respuesta);
